@@ -1,6 +1,6 @@
 include requirements.txt
 include LICENSE.txt
-include README.md
+include README.txt
 recursive-include djangow2ui/static *
 recursive-include djangow2ui/templates *
 recursive-exclude * *.py[co]
