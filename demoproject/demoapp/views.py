@@ -2,9 +2,15 @@ from django.views.generic import TemplateView
 from djangow2ui.grid import W2UIGridView
 from .models import *
 
-class PersonView(W2UIGridView):
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
+class PersonBasicView(W2UIGridView):
     model  = Person
     fields = ('id', 'fname', 'lname', 'email', 'sdate')
+    template_name = "basic.html"
+
+class PersonView(PersonBasicView):
     template_name = "persons.html"
     class W2UI:
         name = "persons"
