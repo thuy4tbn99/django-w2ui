@@ -1,0 +1,11 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static "djangow2ui/w2ui/w2ui-1.4.3.min.css" %}" />
+<script src="{% static "djangow2ui/jquery/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "djangow2ui/w2ui/w2ui-1.4.3.js" %}"></script>
+<script src="{% static "djangow2ui/json_csrf.js" %}"></script>
+<script type="text/javascript">
+$(function(){
+    w2utils.settings.dataType = 'JSON'; 
+    w2utils.settings.date_format = "yyyy-mm-dd";
+});
+</script>

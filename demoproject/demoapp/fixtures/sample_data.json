@@ -1,0 +1,19 @@
+[
+    { "model": "demoapp.person", "pk": 1, "fields": { "fname": "John", "lname": "Doe", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 2, "fields": { "fname": "Stuart", "lname": "Motzart", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 3, "fields": { "fname": "Jin", "lname": "Franson", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 4, "fields": { "fname": "Susan", "lname": "Ottie", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 5, "fields": { "fname": "Kelly", "lname": "Silver", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 6, "fields": { "fname": "Francis", "lname": "Gatos", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 7, "fields": { "fname": "Mark", "lname": "Welldo", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 8, "fields": { "fname": "Thomas", "lname": "Bahh", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.person", "pk": 9, "fields": { "fname": "Sergei", "lname": "Rachmaninov", "email": "jdoe@gmail.com", "sdate": "2012-3-4" } },
+    { "model": "demoapp.equipment", "pk": 1, "fields": { "person": 1, "name": "Camera" } },
+    { "model": "demoapp.equipment", "pk": 2, "fields": { "person": 1, "name": "Sun shades" } },
+    { "model": "demoapp.equipment", "pk": 3, "fields": { "person": 1, "name": "Hat" } },
+    { "model": "demoapp.equipment", "pk": 4, "fields": { "person": 1, "name": "Backpack" } },
+    { "model": "demoapp.equipment", "pk": 5, "fields": { "person": 2, "name": "Trolley" } },
+    { "model": "demoapp.equipment", "pk": 6, "fields": { "person": 2, "name": "Sun shades" } },
+    { "model": "demoapp.equipment", "pk": 7, "fields": { "person": 2, "name": "Baseball cap" } },
+    { "model": "demoapp.equipment", "pk": 8, "fields": { "person": 3, "name": "Backpack" } }
+]
