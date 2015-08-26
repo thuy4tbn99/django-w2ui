@@ -1,3 +1,4 @@
 *.pyc
 *.swp
+django_w2ui.egg-info
 demoproject/db.sqlite3
