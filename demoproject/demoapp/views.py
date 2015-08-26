@@ -6,8 +6,7 @@ class IndexView(TemplateView):
     template_name = 'index.html'
 
 class PersonBasicView(W2UIGridView):
-    model  = Person
-    fields = ('id', 'fname', 'lname', 'email', 'sdate')
+    model = Person
     template_name = "basic.html"
 
 class PersonView(PersonBasicView):

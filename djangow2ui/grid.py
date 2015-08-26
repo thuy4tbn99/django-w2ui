@@ -60,7 +60,7 @@ class W2UIGridView(TemplateView):
             self.settings["header"] = "List of %s" % opts.verbose_name_plural
 
         if not self.fields:
-            self.fields = opts.fields
+            self.fields = [ getattr(f,'name') for f in opts.fields ]
 
         self.settings["columns"] = []
         self.settings["searches"] = []
