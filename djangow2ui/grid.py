@@ -60,7 +60,7 @@ class W2UIGridView(TemplateView):
             self.settings["header"] = "List of %s" % opts.verbose_name_plural
 
         if not self.fields:
-            self.fields = [ getattr(f,'name') for f in opts.fields ]
+            self.fields = [ f.name for f in opts.get_fields() if not f.is_relation ]
 
         self.settings["columns"] = []
         self.settings["searches"] = []
@@ -210,9 +210,9 @@ class W2UIGridView(TemplateView):
         opts = self.model._meta
         pieces = fname.split(LOOKUP_SEP)
         for piece in pieces[:-1]:
-            f = opts.get_field_by_name(piece)[0]
+            f = opts.get_field(piece)
             opts = f.related_model._meta
-        f = opts.get_field_by_name(pieces[-1])[0]
+        f = opts.get_field(pieces[-1])
         return f
 
     def get_field_type(self, field):
