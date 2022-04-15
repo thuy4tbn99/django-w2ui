@@ -3,7 +3,7 @@
 import uuid
 import os
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
+from pip._internal.req import parse_requirements
 
 import djangow2ui
 
