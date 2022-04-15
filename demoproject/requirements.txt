@@ -1,2 +1,2 @@
 -r ../requirements.txt
-git+https://github.com/ant9000/django-w2ui.git
+git+https://github.com/thuy4tbn99/django-w2ui.git
